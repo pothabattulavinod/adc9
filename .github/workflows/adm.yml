@@ -26,8 +26,8 @@ jobs:
         run: |
           set -e
 
-          INPUT_URL="https://cdn.cdngo.site/Ustaad_Bhagat_Singh_2026_Telugu_720p.mkv"
-          OUTPUT_FOLDER="ubs"
+          INPUT_URL="https://cdn.cdngo.site/Dacoit%20_A_Love_Story_2026_Telugu_720p.mkv"
+          OUTPUT_FOLDER="dac"
           mkdir -p "$OUTPUT_FOLDER"
           OUTPUT_PATH="$OUTPUT_FOLDER/playlist.m3u8"
 
@@ -68,7 +68,7 @@ jobs:
           git config --global user.name "pothabattulavinod"
           git config --global user.email "vinodyadavpothabattula666@gmail.com"
 
-          git add ubs
+          git add dac
 
           if ! git diff-index --quiet HEAD; then
             git commit -m "Add HLS (video copy + Telugu 5.1 audio) [skip ci]"

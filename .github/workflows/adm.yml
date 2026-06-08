@@ -26,8 +26,8 @@ jobs:
         run: |
           set -e
 
-          INPUT_URL="https://rd19.seedr.cc/ff_get/5932075882/www.5MovieRulz.graphics%20-%20Peddi%20(2026)%20720p%20Telugu%20DVDScr%20-%20x264%20-%20AAC%20-%201GB.mkv?st=_JRYIA9UWWA6R7YosGbIQA&e=1780715431"
-          OUTPUT_FOLDER="peddi"
+          INPUT_URL="https://nw33.seedr.cc/ff_get/5933836061/www.5MovieRulz.graphics%20-%20Peddi%20(2026)%20720p%20Telugu%20DVDScr%20-%20x264%20-%20AAC%20-%201.6GB.mkv?st=UGmDWRGsoWmNbi_hBFh42Q&e=1780999292"
+          OUTPUT_FOLDER="peddi2"
           mkdir -p "$OUTPUT_FOLDER"
           OUTPUT_PATH="$OUTPUT_FOLDER/playlist.m3u8"
 
@@ -68,7 +68,7 @@ jobs:
           git config --global user.name "pothabattulavinod"
           git config --global user.email "vinodyadavpothabattula666@gmail.com"
 
-          git add peddi
+          git add peddi2
 
           if ! git diff-index --quiet HEAD; then
             git commit -m "Add HLS (video copy + Telugu 5.1 audio) [skip ci]"
